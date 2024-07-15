@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailStudentActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/by_view_rectangle2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/llHeader"/>
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:padding="5dp"
+        android:background="@drawable/bg_corner_back_white"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"  />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/title_detail_student"
+        android:fontFamily="@font/boldinter"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/llHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader">
+
+        <View
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:background="@drawable/by_view_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfilePicture"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_tobi_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvStudentLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/level"
+            android:textSize="22sp"
+            android:fontFamily="@font/boldinter"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/ivProfilePicture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvStudentAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textSize="16sp"
+            android:fontFamily="@font/boldinter"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvStudentLevel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clStudentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llHeader">
+
+        <ImageView
+            android:id="@+id/ivCalendar"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_calendar"
+            app:tint="@color/purple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_and_time"
+            android:textSize="13dp"
+            android:fontFamily="@font/boldinter"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/ivCalendar"
+            app:layout_constraintStart_toEndOf="@id/ivCalendar"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendar"/>
+
+        <ImageView
+            android:id="@+id/ivAttendance"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_attendance"
+            app:tint="@color/purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCalendar"/>
+
+        <TextView
+            android:id="@+id/tvAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_and_time"
+            android:textSize="13dp"
+            android:fontFamily="@font/boldinter"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/ivAttendance"
+            app:layout_constraintStart_toEndOf="@id/ivAttendance"
+            app:layout_constraintBottom_toBottomOf="@id/ivAttendance"/>
+
+        <ImageView
+            android:id="@+id/ivTeacher"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_role"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAttendance"/>
+
+        <TextView
+            android:id="@+id/tvTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_and_time"
+            android:textSize="13dp"
+            android:fontFamily="@font/boldinter"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/ivTeacher"
+            app:layout_constraintStart_toEndOf="@id/ivTeacher"
+            app:layout_constraintBottom_toBottomOf="@id/ivTeacher"/>
+
+        <ImageView
+            android:id="@+id/ivDailyReport"
+            android:layout_width="38dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_daily_report"
+            app:tint="@color/purple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTeacher"/>
+
+        <TextView
+            android:id="@+id/tvDailyReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/day_and_time"
+            android:textSize="13dp"
+            android:fontFamily="@font/boldinter"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="@id/ivDailyReport"
+            app:layout_constraintStart_toEndOf="@id/ivDailyReport"
+            app:layout_constraintBottom_toBottomOf="@id/ivDailyReport"/>
+
+        <LinearLayout
+            android:id="@+id/llDateDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivDailyReport">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitleJoinDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/join_date"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/boldinter"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_corner_fill_8dp"/>
+
+                <TextView
+                    android:id="@+id/tvJoinDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/date"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/boldinter"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_corner_back"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitleLevelUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/level_up"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/boldinter"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="3dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_corner_fill_8dp"/>
+
+                <TextView
+                    android:id="@+id/tvLevelUpDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/date"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/boldinter"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/bg_corner_back"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:tint="@color/white"
+            android:src="@drawable/ic_delete"
+            android:background="@drawable/bg_corner_fill_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnEditProfile"
+            app:layout_constraintBottom_toBottomOf="@id/btnEditProfile"/>
+
+        <LinearLayout
+            android:id="@+id/btnEditProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_corner_fill_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnDelete"
+            app:layout_constraintTop_toBottomOf="@id/llDateDetail">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_edit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:text="@string/edit_profile"
+                android:textSize="20sp"
+                android:fontFamily="@font/boldinter"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

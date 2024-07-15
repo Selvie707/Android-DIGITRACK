@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/dialog_background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:tint="@color/purple"
+        android:src="@drawable/ic_error"/>
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="22dp"
+        android:drawableTint="@color/purple"
+        android:fontFamily="@font/boldinter"
+        android:text="@string/error"
+        android:textColor="@color/purple"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/purple"
+        android:text="Something went wrong"
+        android:textColor="@color/purple"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/btnOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="12dp"
+        android:text="@string/okay"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:fontFamily="@font/boldinter"
+        android:background="@drawable/bottom_bg_purple"/>
+
+</LinearLayout>

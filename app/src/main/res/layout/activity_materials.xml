@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MaterialsActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/purple"
+        android:background="@drawable/bg_corner_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/title_materials"
+        android:fontFamily="@font/boldinter"
+        android:textSize="28sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+
+    <LinearLayout
+        android:id="@+id/llCurriculum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeader">
+
+        <TextView
+            android:id="@+id/btnDK2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dk2"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/boldinter"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_corner_backii"/>
+
+        <TextView
+            android:id="@+id/btnDK3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dk3"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/boldinter"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/bg_corner_back"/>
+
+        <TextView
+            android:id="@+id/btnACD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/acd"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/purple"
+            android:fontFamily="@font/boldinter"
+            android:gravity="center_horizontal"
+            android:background="@drawable/bg_corner_back"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="4dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/purple"
+            android:background="@drawable/bg_corner_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btnBack"
+            app:layout_constraintStart_toEndOf="@id/tvHeader"
+            app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llCurriculum"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/llLevel"
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/bg_corner_radius">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvLevels"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        tools:listitem="@layout/item_list_level"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llMaterials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginRight="32dp"
+                    android:background="@drawable/bg_corner_back">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMaterials"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/item_list_materials"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

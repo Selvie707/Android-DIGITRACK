@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tvTitleChangeSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:text="@string/make_invitation"
+        android:textSize="16sp"
+        android:fontFamily="@font/boldinter"/>
+
+    <EditText
+        android:id="@+id/etYourPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:padding="10dp"
+        android:hint="@string/your_smtp_password"
+        android:textSize="17sp"
+        android:fontFamily="@font/regularinter"
+        android:drawablePadding="8dp"
+        android:textColor="@color/purple"
+        android:drawableTint="@color/purple"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/bg_corner_stroke"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="26dp"
+            app:tint="@color/purple"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_error"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="@string/smtp_password"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:padding="10dp"
+        android:hint="@string/h_email"
+        android:textSize="17sp"
+        android:fontFamily="@font/regularinter"
+        android:drawablePadding="8dp"
+        android:textColor="@color/purple"
+        android:drawableTint="@color/purple"
+        android:drawableStart="@drawable/ic_email"
+        android:background="@drawable/bg_corner_stroke"/>
+
+    <Spinner
+        android:id="@+id/spRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/spinner_teacher"
+        android:paddingStart="38dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/cancelCaps"
+            android:textColor="@color/purple"
+            android:textAlignment="center"
+            android:fontFamily="@font/boldinter"
+            android:background="@drawable/bg_corner_stroke"/>
+
+        <TextView
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/boldinter"
+            android:background="@drawable/bottom_bg_purple"/>
+
+    </LinearLayout>
+
+</LinearLayout>

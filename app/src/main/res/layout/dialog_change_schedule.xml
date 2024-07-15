@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/dialog_background">
+
+    <TextView
+        android:id="@+id/tvTitleChangeSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:text="@string/change_schedule"
+        android:textSize="16sp"
+        android:fontFamily="@font/boldinter"/>
+
+    <TextView
+        android:id="@+id/tvChangeCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:padding="10dp"
+        android:text="@string/day"
+        android:textSize="17sp"
+        android:fontFamily="@font/regularinter"
+        android:drawablePadding="8dp"
+        android:textColor="@color/purple"
+        android:drawableTint="@color/purple"
+        android:drawableStart="@drawable/ic_calendar"
+        android:background="@drawable/bg_corner_stroke"/>
+
+    <Spinner
+        android:id="@+id/spChangeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/spinner_time"
+        android:paddingStart="38dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="22dp">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/cancelCaps"
+            android:textColor="@color/purple"
+            android:textAlignment="center"
+            android:fontFamily="@font/boldinter"
+            android:background="@drawable/bg_corner_stroke"/>
+
+        <TextView
+            android:id="@+id/btnChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:text="@string/change"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:fontFamily="@font/boldinter"
+            android:background="@drawable/bottom_bg_purple"/>
+
+    </LinearLayout>
+
+</LinearLayout>

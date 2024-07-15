@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">DIGITRACK</string>
+
+    <!--    BUTTON-->
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_EditProfile">EDIT PROFILE</string>
+    <string name="btn_feedback">FEEDBACK</string>
+    <string name="btn_helpCenter">HELP CENTER</string>
+    <string name="btn_logout">LOG OUT</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_new">NEW STUDENT</string>
+    <string name="btn_add">ADD</string>
+    <string name="btn_save">SAVE</string>
+
+    <!--    TEXTVIEW-->
+    <string name="tv_donthaveaccount">Don\'t have an account?</string>
+    <string name="tv_haveaccount">Have an account?</string>
+    <string name="tv_register">Register</string>
+    <string name="tv_register2">REGISTER</string>
+    <string name="tv_login">LOGIN</string>
+    <string name="tv_login2">Login</string>
+    <string name="tv_profile">PROFILE</string>
+    <string name="tv_editProfile">EDIT PROFILE</string>
+    <string name="tv_hiUser">Hi, Via!</string>
+    <string name="tv_ready">Never stop learn to grow!</string>
+    <string name="tv_welcome">Welcome!</string>
+    <string name="tv_lets">Let’s check today’s teaching schedule</string>
+    <string name="tv_access">ACCESS OTHER PAGE</string>
+    <string name="tv_namaMurid">NAMA MURID</string>
+    <string name="tv_schedule">SCHEDULE</string>
+    <string name="tv_attendance">ATTENDANCE</string>
+    <string name="tv_materials">MATERIALS</string>
+    <string name="tv_daily">DAILY REPORT</string>
+    <string name="tv_nearest">NEAREST SCHEDULE</string>
+    <string name="tv_namaAnak">Nama Anak</string>
+    <string name="tv_mingguKe">Minggu Ke</string>
+    <string name="tv_materi">Materi</string>
+    <string name="tv_level">Level</string>
+    <string name="tv_jam">JAM 17.00 - 18.00 WIB</string>
+    <string name="tv_feedback">FEEDBACK</string>
+    <string name="tv_thankyoutakingpart">Thank you for taking part</string>
+    <string name="tv_pleaseComplete">Please complate the documtent to help us improve this app in the future</string>
+    <string name="tv_Rate">Rate this App</string>
+    <string name="tv_criticssugges">Critics or Suggestion</string>
+    <string name="tv_pleaseWrite">Please write critics or suggestion here...</string>
+
+    <!--    HINT-->
+    <string name="h_search">Search</string>
+    <string name="h_username">Username</string>
+    <string name="h_name">Name</string>
+    <string name="h_email">Email</string>
+    <string name="h_password">Password</string>
+    <string name="h_repeatPassword">Repeat Password</string>
+    <string name="h_role">Role</string>
+    <string name="h_remember">Remember Me</string>
+    <string name="h_forgetPaddword">Forget Password?</string>
+    <string name="h_level">Level</string>
+    <string name="h_day">Day</string>
+    <string name="h_time">Time</string>
+    <string name="h_teacher">Teacher</string>
+    <string name="h_link">Daily Report Link</string>
+    <string name="title_help_center">HELP CENTER</string>
+    <string name="faq">FAQ</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="email_via">selvietan.mukhua@gmail.com</string>
+    <string name="no_via">0895621654714</string>
+    <string name="email_lia">muliasahpira@gmail.com</string>
+    <string name="no_lia">081274612228</string>
+    <string name="title_attendance">ATTENDANCE</string>
+    <string name="month">MONTH</string>
+    <string name="name">Name</string>
+    <string name="week_i">1</string>
+    <string name="week_ii">2</string>
+    <string name="week_iii">3</string>
+    <string name="week_iv">4</string>
+    <string name="material">Material</string>
+    <string name="title_schedule">SCHEDULE</string>
+    <string name="date">DATE</string>
+    <string name="day">DAY</string>
+    <string name="time">TIME</string>
+    <string name="week">Week X</string>
+    <string name="border">|</string>
+    <string name="level">Level</string>
+    <string name="title_daily_report">DAILY REPORT</string>
+    <string name="title_materials">MATERIALS</string>
+    <string name="dk2">DK2</string>
+    <string name="dk3">DK3</string>
+    <string name="acd">ACD</string>
+    <string name="title_detail_student">STUDENT NAME</string>
+    <string name="age">AGE</string>
+    <string name="day_and_time">Day, Time WIB</string>
+    <string name="join_date">JOIN DATE</string>
+    <string name="level_up">LEVEL UP</string>
+    <string name="edit_profile">EDIT PROFILE</string>
+    <string name="change_schedule">CHANGE SCHEDULE</string>
+    <string name="update_version">UPDATE APP VERSION</string>
+    <string name="change">CHANGE</string>
+    <string name="edit_schedule">EDIT SCHEDULE</string>
+    <string name="this_schedule">This Schedule</string>
+    <string name="this_and_following_schedule">This and following schedule</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="question">Question</string>
+    <string name="answer">Answer</string>
+    <string name="cancelCaps">CANCEL</string>
+    <string name="tv_editPassword">EDIT PASSWORD</string>
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="age_proper_case">Age</string>
+    <string name="attendance">Attendance</string>
+    <string name="join_date_proper">Join Date</string>
+    <string name="whats_new">What\'s new:</string>
+    <string name="something_new">Something new</string>
+    <string name="detele_this_student">Detele this student?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="material_name">Material Name</string>
+    <string name="material_tools">TOOLS</string>
+    <string name="material_goals">GOALS</string>
+    <string name="age_groups">AGE GROUPS</string>
+    <string name="little_creator">LITTLE CREATOR</string>
+    <string name="junior">JUNIOR</string>
+    <string name="teenager">TEENAGER</string>
+    <string name="success">SUCCESS</string>
+    <string name="error">ERROR</string>
+    <string name="okay">OKAY</string>
+    <string name="rockstar">ROCKSTAR</string>
+    <string name="make_invitation">MAKE INVITATION</string>
+    <string name="send">SEND</string>
+    <string name="invitation_code">Invitation Code</string>
+    <string name="your_smtp_password">Your SMTP Password</string>
+    <string name="smtp_password">Seek how to get SMTP password at help center</string>
+    <string name="delete_user">DELETE USER</string>
+    <string name="delete">DELETE</string>
+    <string name="material_link">GO TO FILE</string>
+
+    <!--    SPINNER-->
+    <string-array name="spRole">
+        <item>Role</item>
+        <item>Admin</item>
+        <item>Teacher</item>
+    </string-array>
+</resources>

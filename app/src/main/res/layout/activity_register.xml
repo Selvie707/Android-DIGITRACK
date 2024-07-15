@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/tvRegister_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_register2"
+        android:fontFamily="@font/boldinter"
+        android:textSize="28sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etInvitationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/invitation_code"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="50dp"
+        android:padding="15dp"
+        android:drawableTint="@color/purple"
+        android:drawableStart="@drawable/ic_invitation"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_name"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/etInvitationCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etPassword_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etRepeatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_repeatPassword"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword_Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btnLogin_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/purple"
+        android:text="@string/btn_register"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/boldinter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llGoToLogin"/>
+
+    <LinearLayout
+        android:id="@+id/llGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_haveaccount"
+            android:textColor="@color/purple"
+            android:textSize="12sp"
+            android:fontFamily="@font/regularinter"/>
+        <TextView
+            android:id="@+id/tvLogin_Register"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_login2"
+            android:textColor="@color/purple"
+            android:textSize="12sp"
+            android:fontFamily="@font/boldinter"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

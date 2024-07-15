@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:context=".activities.EditProfileActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:tint="@color/purple"
+        android:background="@drawable/bg_corner_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvRegister_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp"
+        android:text="ADD MATERIAL"
+        android:fontFamily="@font/boldinter"
+        android:textSize="28sp"
+        android:textColor="@color/purple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnBack"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile_EditProfile"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/photo"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Material ID"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/boldinter"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/ivProfile_EditProfile"/>
+
+    <EditText
+        android:id="@+id/etName_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Material ID"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:inputType="number"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/tv_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        android:text="Material Name"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/boldinter"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/etName_EditProfile"/>
+
+    <EditText
+        android:id="@+id/etEmail_EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Material Name"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/h_password"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/boldinter"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/etEmail_EditProfile"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/etPasswordEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/h_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/purple"
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:background="@drawable/bg_corner_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Password"/>
+
+    <TextView
+        android:id="@+id/tv_Role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="5dp"
+        android:text="Level ID"
+        android:textColor="@color/purple"
+        android:fontFamily="@font/boldinter"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/etPasswordEditProfile"/>
+
+
+    <Spinner
+        android:id="@+id/spRoleEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_spinner"
+        android:drawableStart="@drawable/ic_role"
+        android:paddingStart="38dp"
+        android:padding="15dp"
+        android:entries="@array/spRole"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Role"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bg_corner"
+        android:backgroundTint="@color/purple"
+        android:text="@string/btn_add"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/boldinter"
+        app:layout_constraintTop_toBottomOf="@id/spRoleEditProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
